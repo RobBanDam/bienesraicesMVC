@@ -27,6 +27,16 @@
                 echo "Página No Encontrada";
             }
         }
+
+        //Muestra una vista
+        public function render($view){
+
+            ob_start(); //Almacenamiento en memoria durante un momento...
+
+            include __DIR__ . "/views/$view.php";
+            $contenido = ob_get_clean(); //Limpia el Buffer
+            include __DIR__ . '/views/layout.php';
+        }
     }
 
 ?>
