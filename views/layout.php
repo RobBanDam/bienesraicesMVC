@@ -23,7 +23,7 @@
     <header class="header <?php echo $inicio ? 'inicio' : ''; ?> ">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="index.php"> <!-- revisar este apartado -->
+                <a href="/"> <!-- revisar este apartado -->
                     <img src="../build/img/logo.svg" alt="logotipo de bienes raices">
                 </a>
 
@@ -34,18 +34,18 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="../build/img/dark-mode.svg">
                     <nav class="navegacion">
-                        <a href="/bienesraices/nosotros.php">Nosotros</a>
-                        <a href="/bienesraices/anuncios.php">Anuncios</a>
-                        <a href="/bienesraices/blog.php">Blog</a>
-                        <a href="/bienesraices/contacto.php">Contacto</a>
+                        <a href="/nosotros">Nosotros</a>
+                        <a href="/propiedades">Anuncios</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/contacto">Contacto</a>
 
                         <?php if(!$auth): ?>
                             <a href="/bienesraices/login.php">Login</a>
                         <?php endif; ?>
                         
                         <?php if($auth): ?>
-                            <a href="/bienesraices/admin/index.php">Administrar</a>
-                            <a href="/bienesraices/cerrar-sesion.php">Cerrar Sesión</a>
+                            <a href="/admin">Administrar</a>
+                            <a href="/cerrar-sesion">Cerrar Sesión</a>
                         <?php endif; ?>
 
                     </nav>
